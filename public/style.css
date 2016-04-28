@@ -1,0 +1,22 @@
+.panel-body {
+  text-align: center;
+  background: #b2b2ff;
+}
+
+.add-button {
+  width: 100%;
+}
+
+h4 {
+  color: #696969;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.total-balance {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.add-button{
+  background: #b2b2ff;
+}
