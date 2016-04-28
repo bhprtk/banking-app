@@ -41,7 +41,7 @@ app.controller('mainCtrl', function($scope) {
     $scope.tranToEdit = angular.copy(tran);
   };
 
-  $scope.saveEdit = (type) => {
+  $scope.saveEdit = () => {
     $scope.trans[editingIndex] = $scope.tranToEdit;
     $scope.tranToEdit = null;
   };
