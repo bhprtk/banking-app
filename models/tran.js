@@ -12,7 +12,7 @@ db.run(`CREATE TABLE IF NOT EXISTS trans (
         )`);
 
 exports.create = function(tran, cb) {
-  db.run('INSERT INTO trans (id, date, desc, debit, credit, memo) VALUES (?, ?, ?, ?, ?, ?)', null, tran.date, tran.desc, tran.debit, tran.credit, tran.memo,
+  db.run('INSERT INTO trans (id, date, desc, debit, credit, memo) VALUES (?, ?, ?, ?, ?, ?)', null, tran.date, tran.desc, tran.debit || 0, tran.credit || 0, tran.memo,
     (err) => {
       if(err) return cb(err);
 
