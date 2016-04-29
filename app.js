@@ -18,8 +18,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', require('./routes/index'));
 
-var server = http.createServer(app);
+app.use('/api', require('./routes/api'));
 
-server.listen(PORT, err => {
+
+app.listen(PORT, err => {
   console.log(err || `Server listening on port ${PORT}`);
 });
